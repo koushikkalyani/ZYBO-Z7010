@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Aug 24 17:49:41 2023
+# Process ID: 25684
+# Current directory: C:/New folder/bin2gray
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21136 C:\New folder\bin2gray\bin2gray.xpr
+# Log file: C:/New folder/bin2gray/vivado.log
+# Journal file: C:/New folder/bin2gray\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 24 17:50:32 2023...

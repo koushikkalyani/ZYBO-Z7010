@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug 23 15:20:46 2023
+# Process ID: 22420
+# Current directory: C:/koushik_zybo/bin2gray/bin2gray.runs/impl_1
+# Command line: vivado.exe -log b2g.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source b2g.tcl -notrace
+# Log file: C:/koushik_zybo/bin2gray/bin2gray.runs/impl_1/b2g.vdi
+# Journal file: C:/koushik_zybo/bin2gray/bin2gray.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source b2g.tcl -notrace

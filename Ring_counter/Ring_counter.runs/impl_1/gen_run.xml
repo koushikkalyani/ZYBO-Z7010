@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1692882799">
+  <File Type="ROUTE-PWR" Name="rc_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="rc.tcl"/>
+  <File Type="BITSTR-BMM" Name="rc_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="rc_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="rc_reports.tcl"/>
+  <File Type="OPT-DCP" Name="rc_opt.dcp"/>
+  <File Type="OPT-DRC" Name="rc_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="rc.hwdef"/>
+  <File Type="PWROPT-DCP" Name="rc_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="rc_placed.dcp"/>
+  <File Type="PLACE-IO" Name="rc_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="rc_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="rc_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="rc_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="rc_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="rc_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="rc.bin"/>
+  <File Type="PHYSOPT-DCP" Name="rc_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="rc.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="rc_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="rc_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="rc_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="rc_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="rc_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="rc_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="rc_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="rc.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rc_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rc_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="rc_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="rc_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="rc_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="rc_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="rc_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="rc_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="rc_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="rc_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="rc_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="rc_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rc_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rc_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="rc.bit"/>
+  <File Type="BITSTR-RBT" Name="rc.rbt"/>
+  <File Type="BITSTR-NKY" Name="rc.nky"/>
+  <File Type="PDI-FILE" Name="rc.pdi"/>
+  <File Type="RCFI_FILE" Name="rc.rcfi"/>
+  <File Type="CFI_FILE" Name="rc.cfi"/>
+  <File Type="RNPI_FILE" Name="rc.rnpi"/>
+  <File Type="NPI_FILE" Name="rc.npi"/>
+  <File Type="RBD_FILE" Name="rc.rbd"/>
+  <File Type="BITSTR-LTX" Name="rc.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="rc.sysdef"/>
+  <File Type="BG-BGN" Name="rc.bgn"/>
+  <File Type="BG-DRC" Name="rc.drc"/>
+  <File Type="RDI-RDI" Name="rc.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/rc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="rc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ring.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ring.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
